@@ -1,0 +1,18 @@
+@font-face {
+  font-family: hkRegular;
+  src: url('../assets/hanken/HKGrotesk-Regular.ttf');
+}
+
+@font-face {
+  font-family: hkMedium;
+  src: url('../assets/hanken/HKGrotesk-Medium.ttf');
+}
+
+@font-face {
+  font-family: hkSemiBold;
+  src: url('../assets/hanken/HKGrotesk-SemiBold.ttf');
+}
+
+body {
+  font-family: hkRegular !important;
+}

@@ -13,6 +13,11 @@
   src: url('../assets/hanken/HKGrotesk-SemiBold.ttf');
 }
 
+@font-face {
+  font-family: hkBold;
+  src: url('../assets/hanken/HKGrotesk-Bold.ttf');
+}
+
 body {
-  font-family: hkRegular !important;
+  font-family: hkSemiBold !important;
 }

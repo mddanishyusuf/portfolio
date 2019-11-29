@@ -1,0 +1,55 @@
+.blog-container {
+    padding: 80px 60px;
+
+    .content-section {
+        padding: 20px 0px;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        h2 {
+            font-family: hkBold;
+            font-weight: 600;
+        }
+
+        .section-heading {
+            font-size: 22px;
+            font-family: hkRegular !important;
+            color: #212529 !important;
+            max-width: 600px;
+        }
+
+        .row {
+            padding: 30px 0px;
+
+            .metadata {
+
+                .profile-image {
+                    width: 80px;
+                    height: 80px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border-radius: 50%;
+                }
+            }
+
+            .content {
+                font-size: 22px;
+                font-family: hkSemiBold !important;
+                color: #212529 !important
+            }
+        }
+    }
+}
+
+.blog-card {
+    .metadata {
+        .label {
+            color: #7b7b7b;
+            font-size: 30px;
+            letter-spacing: -1.65px;
+            font-weight: 600;
+            line-height: 60px;
+        }
+    }
+}

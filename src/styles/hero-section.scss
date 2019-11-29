@@ -1,0 +1,48 @@
+#hero {
+    position: relative;
+    height: calc(100vh - 150px);
+
+    .content {
+        padding: 40px 60px;
+        height: calc(100vh - 150px);
+        display: flex;
+        align-content: center;
+        align-items: center;
+
+        .about-me {
+
+            h2 {
+                font-size: 60px;
+                letter-spacing: -1.65px;
+                font-weight: 600;
+                line-height: 60px;
+            }
+
+            .headline {
+                font-size: 35px;
+                line-height: 50px;
+                font-family: hkSemiBold !important;
+            }
+        }
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
+
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

@@ -3,6 +3,7 @@ module.exports = {
         title: `Mohd Danish`,
         description: `Article about coding, foods, tricks and new things I learn daily. So, It is my daily knowledge base book so called a personal blog`,
         author: `Mohd Danish <mddanishyusuf@gmail.com>`,
+        siteUrl: `https://mohddanish.me`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -43,6 +44,7 @@ module.exports = {
             },
         },
         `gatsby-transformer-remark`,
+        `gatsby-plugin-sitemap`,
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

@@ -3,7 +3,11 @@
     height: calc(100vh - 150px);
     padding: 0px 60px;
 
- 
+    @media screen and (max-width: 600px) {
+        padding: 0px 30px !important;
+    }
+
+
     .content {
         height: calc(100vh - 150px);
         display: flex;
@@ -20,12 +24,13 @@
                 letter-spacing: -1.65px;
                 font-weight: 600;
                 line-height: 60px;
+                font-family: hkEBold !important;
             }
 
             .headline {
 
                 font-size: 32px;
-                font-family: hkRegular !important;
+                font-family: hkMedium !important;
                 color: #212529 !important;
             }
         }
@@ -57,7 +62,7 @@
 @media screen and (max-width: 600px) {
 
     .background {
-        .image{
+        .image {
 
             display: none !important
         }
@@ -67,10 +72,10 @@
 @media screen and (max-width: 600px) {
     #hero {
         position: relative;
-        height: calc(100vh - 300px);
-        padding: 0px 60px;
-    .content {
-        height: calc(100vh - 300px);
+        height: calc(100vh - 400px);
+
+        .content {
+            height: calc(100vh - 400px);
+        }
     }
-}
 }

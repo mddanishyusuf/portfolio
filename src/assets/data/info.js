@@ -32,7 +32,7 @@ export const social = [
         name: 'GitHub',
         type: 'Open Source Community',
         link: 'https://github.com/mddanishyusuf',
-        favicon: 'https://github.githubassets.com/favicon.ico',
+        favicon: 'https://i.imgur.com/OYSZvPU.png',
         about_it: 'The place to show our work to the world',
     },
 ]

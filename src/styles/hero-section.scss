@@ -25,6 +25,10 @@
                 font-weight: 600;
                 line-height: 60px;
                 font-family: hkEBold !important;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 50px;
+                }
             }
 
             .headline {
@@ -32,6 +36,10 @@
                 font-size: 32px;
                 font-family: hkMedium !important;
                 color: #212529 !important;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 26px;
+                }
             }
         }
     }
@@ -72,10 +80,10 @@
 @media screen and (max-width: 600px) {
     #hero {
         position: relative;
-        height: calc(100vh - 400px);
+        height: calc(100vh - 300px);
 
         .content {
-            height: calc(100vh - 400px);
+            height: calc(100vh - 300px);
         }
     }
 }

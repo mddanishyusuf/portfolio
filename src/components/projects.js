@@ -47,15 +47,19 @@ const ProjectPage = ({ showAll }) => {
     }
 
     return (
-        <div className="project-container" name="projects">
+        <div
+            className="project-container"
+            name="projects"
+            style={!showAll ? { backgroundColor: '#f7f7f7' } : { backgroundColor: '#fff' }}
+        >
             <div className="content-section">
                 <h2>My Projects</h2>
                 <div className="section-heading">I build products to solve real problems of developers.</div>
                 <div className="blog-cards">
                     <div className="side-projects">
                         <section className="side-project-list">
-                            {arrayList.map(personal => (
-                                <section className="side-project" key={personal.frontmatter.path}>
+                            {arrayList.map((personal, key) => (
+                                <section className="side-project" key={key}>
                                     <Img
                                         fluid={personal.frontmatter.featuredImage.childImageSharp.fluid}
                                         style={{

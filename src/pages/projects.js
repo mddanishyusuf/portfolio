@@ -11,6 +11,9 @@ const Projects = () => (
             title="Projects - I build project to solve real problems"
             description="List of all my projects like public-apis.xyz, nocodeapis.com, tweetjobs.dev etc"
         />
+        <br />
+        <br />
+        <br />
         <ProjectPage showAll />
     </Layout>
 )

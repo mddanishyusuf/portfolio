@@ -5,14 +5,15 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from './header';
+import Header from './header'
+import { social } from '../assets/data/info.js'
 
-import './layout.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './layout.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
                 }
             }
         }
-    `);
+    `)
 
     return (
         <>
@@ -31,16 +32,56 @@ const Layout = ({ children }) => {
             <div>
                 <main>{children}</main>
                 <footer>
-                    © {new Date().getFullYear()}, Built with
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
+                    <div className="footer">
+                        <div className="footer-inner">
+                            <p>
+                                Build by{' '}
+                                <a href="https://twitter.com/mddanishyusuf" target="_blank" rel="noreferrer noopener">
+                                    @mddanishyusuf
+                                </a>
+                            </p>
+                            <p>
+                                Build with{' '}
+                                <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer noopener">
+                                    Gatsby
+                                </a>{' '}
+                                +{' '}
+                                <a
+                                    href="https://github.com/mddanishyusuf/dailyhack/issues"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
+                                    GitHub Issues CMS
+                                </a>
+                            </p>
+                            <p>
+                                Automation{' '}
+                                <a href="https://nocodeapi.com/" target="_blank" rel="noreferrer noopener">
+                                    NoCodeAPI
+                                </a>
+                            </p>
+                        </div>
+                        <div className="footer-nav right-navbar">
+                            <ul>
+                                {social.map(s => (
+                                    <li key={s.name}>
+                                        <a href={s.link} target="_blank" rel="noreferrer noopener">
+                                            <img src={s.favicon} width="20px" height="20px" alt="makers" />{' '}
+                                            {/* <span>Facebook</span> */}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </footer>
             </div>
         </>
-    );
-};
+    )
+}
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout

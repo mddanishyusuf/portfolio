@@ -1,5 +1,8 @@
 .blog-container {
     padding: 80px 60px;
+    @media screen and (max-width: 600px) {
+        padding: 80px 30px;
+    }
 
     .content-section {
         padding: 20px 0px;
@@ -23,6 +26,10 @@
 
             .metadata {
 
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+
                 .profile-image {
                     width: 80px;
                     height: 80px;
@@ -32,24 +39,45 @@
                     border-radius: 50%;
                 }
             }
-
-            .content {
-                font-size: 22px;
-                font-family: hkSemiBold !important;
-                color: #212529 !important
-            }
         }
     }
 }
 
-.blog-card {
+.blog-cards {
+    margin: 60px 0px;
     .metadata {
+        padding: 30px 0px;
         .label {
             color: #7b7b7b;
             font-size: 30px;
-            letter-spacing: -1.65px;
             font-weight: 600;
             line-height: 60px;
+            font-family: hkBold !important;
         }
     }
+.content {
+    .blog-post-item {
+        .post-card {
+            max-width: 800px;
+            .post-title {
+                a {
+                    font-size: 30px;
+                    font-family: hkBold !important;
+                    color: #212529 !important;
+                    text-decoration: none;
+                    padding: 0;
+                }
+            }
+            .reading-time {
+                font-family: hkRegular !important;
+
+            }
+            .summary {
+                font-size: 18px;
+                font-family: hkRegular !important;
+                color: #212529 !important;
+            }
+        }
+    }
+}
 }

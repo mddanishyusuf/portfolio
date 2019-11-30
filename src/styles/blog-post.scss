@@ -42,13 +42,14 @@
         color: #000;
     }
 
-    ol {
+    ol,
+    ul {
         li {
 
-            font-size: 20px;
+            font-size: 18px;
             font-family: hkRegular !important;
             color: #212529 !important;
-            padding: 8px 0px;
+            padding: 4px 0px;
             letter-spacing: -0.003em;
 
             code {

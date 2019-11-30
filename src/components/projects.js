@@ -60,12 +60,12 @@ const ProjectPage = ({ showAll }) => {
                         <section className="side-project-list">
                             {arrayList.map((personal, key) => (
                                 <section className="side-project" key={key}>
-                                    <Img
-                                        fluid={personal.frontmatter.featuredImage.childImageSharp.fluid}
-                                        style={{
-                                            height: '160px',
-                                        }}
-                                    />
+                                    <div style={{ height: '160px', width: '200px' }}>
+                                        <Img
+                                            fluid={personal.frontmatter.featuredImage.childImageSharp.fluid}
+                                            imgStyle={{ objectFit: 'contain' }}
+                                        />
+                                    </div>
                                     <div className="about-project">
                                         <h2>{personal.frontmatter.title}</h2>
                                         <p>{personal.frontmatter.excert}</p>

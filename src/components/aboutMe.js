@@ -31,7 +31,6 @@ const AboutMe = () => (
                                         <span>{social.name}</span>
                                     </div>
                                 </a>
-                                <small>{social.type}</small>
                                 {/* <p>{social.about_it}</p> */}
                             </div>
                         ))}

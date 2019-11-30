@@ -1,12 +1,12 @@
 ---
 path: "/reactjs-talk"
 date: "2019-10-04"
-title: "ReactJS Talks"
+title: "API with GitHub"
 excert: "A curated list of ReactJS conferences around the world YouTube video. Build with Gatsby."
 website: 'https://apiwithgithub.com'
 author: "Mohd Danish"
 twitter: "https://twitter.com/mddanishyusuf"
-featuredImage: "./images/reactjstalk.png"
+featuredImage: "./images/apiwithgithub.png"
 rank: 5
 ---
 

@@ -77,7 +77,7 @@ function SEO({ description, lang, meta, title, featuredImage }) {
             ].concat(meta)}
         >
             <link
-                href="https://fonts.googleapis.com/css?family=Muli:400,500,600,700,800&display=swap"
+                href="https://fonts.googleapis.com/css?family=Sen:400,700,800|Muli:700&display=swap"
                 rel="stylesheet"
             />
             <script async defer src="https://log.mohddanish.me/app.js" />

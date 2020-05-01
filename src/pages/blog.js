@@ -11,7 +11,9 @@ const IndexPage = () => (
             title="Blog - I write about my Projects."
             description="I write about my Projects, Life experience, daily hacks - I do in my Projects & Nomad Life."
         />
-        <BlogPage showAll />
+        <div className="blog-page">
+            <BlogPage showAll />
+        </div>
     </Layout>
 )
 

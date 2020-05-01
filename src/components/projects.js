@@ -53,7 +53,7 @@ const ProjectPage = ({ showAll }) => {
             style={!showAll ? { backgroundColor: '#f7f7f7' } : { backgroundColor: '#fff' }}
         >
             <div className="content-section">
-                <h2>My Projects</h2>
+                <h2 className="my-p">My Projects</h2>
                 <div className="section-heading">I build products to solve real problems of developers.</div>
                 <div className="blog-cards">
                     <div className="side-projects">

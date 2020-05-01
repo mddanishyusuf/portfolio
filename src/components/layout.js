@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import { social } from '../assets/data/info.js'
 
-import './layout.css'
+import './layout.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Layout = ({ children }) => {

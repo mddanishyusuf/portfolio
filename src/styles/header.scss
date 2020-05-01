@@ -9,7 +9,6 @@ header {
     transition: 0.25s ease-out;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 
-
     .home-navbar {
         padding: 40px 60px;
         display: flex;
@@ -36,9 +35,8 @@ header {
     }
 }
 
-
 @media screen and (max-width: 600px) {
-    header{
-        display: none !important
+    header {
+        display: none !important;
     }
 }

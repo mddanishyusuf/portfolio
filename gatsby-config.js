@@ -33,7 +33,7 @@ module.exports = {
             resolve: `gatsby-source-github-issue`,
             options: {
                 owner: 'mddanishyusuf',
-                repo: 'blog-with-github-issues',
+                repo: 'mohddanish',
             },
         },
         {

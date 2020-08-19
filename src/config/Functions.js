@@ -10,7 +10,7 @@ export function onlyPublished(listArray) {
     listArray.forEach(element => {
         const { labels } = element
 
-        const isPublished = labels.findIndex(x => x.name === 'published')
+        const isPublished = labels.findIndex(x => x.name === 'zzz')
 
         if (isPublished > -1) {
             filterList.push(element)

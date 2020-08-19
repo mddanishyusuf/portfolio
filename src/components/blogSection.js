@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import getSlug from 'speakingurl'
+import Markdown from 'markdown-to-jsx'
 
 import { getReadingTime, onlyPublished } from '../config/Functions'
 import '../styles/blog-section.scss'
@@ -59,7 +60,13 @@ const BlogPage = ({ showAll }) => {
                                             </div>
                                             <small className="reading-time">{getReadingTime(item.body)}</small>
                                             <div className="summary">
-                                                <p>{summary}</p>
+
+                                                <Markdown
+                                                    className="body-markdown"
+                                                >
+                                                    {summary}
+                                                </Markdown>
+                                                
                                             </div>
                                         </div>
                                     </div>
